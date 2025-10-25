@@ -60,7 +60,7 @@ public class ITSkillsSection extends Base_Class implements ITSkillsInterfaceElem
 		elementClick(skillName);
 		passInput(skillName,PageObjectManager.getPageObjectManager().getExcelUtility().getCellValue("DATA", "ID", "Software name"));
 		mouseOverActions(javaSkill,"mouseOver");
-		passInput(softwareVersion,PageObjectManager.getPageObjectManager().getExcelUtility().getCellValue("DATA", "ID", "Software Versions"));
+		passInput(softwareVersion,PageObjectManager.getPageObjectManager().getExcelUtility().getCellValue("DATA", "ID", "Software Version"));
 		elementClickByJavaScript(lastUser);
 		elementClickByJavaScript(lastUserOption);
 		elementClickByJavaScript(experienceYear);

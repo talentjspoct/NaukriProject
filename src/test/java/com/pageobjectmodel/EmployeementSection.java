@@ -91,6 +91,7 @@ public class EmployeementSection extends Base_Class implements EmployeementInter
 		elementClickByJavaScript(workedTillMonth);
 		elementClickByJavaScript(workedTillMonthDropDownOptions);
 		passInput(monthlyStipend,PageObjectManager.getPageObjectManager().getExcelUtility().getCellValue("DATA", "ID", "Monthly Stipend"));
+		scrollThePage(employementSaveButton,"scrollUp");
 		elementClickByJavaScript(employementSaveButton);
 		
 	}
